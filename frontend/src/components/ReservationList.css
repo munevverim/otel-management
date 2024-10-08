@@ -1,0 +1,15 @@
+.table-container {
+    margin-left: 260px; /* Sidebar boşluğu */
+    margin-top: 20px;
+  }
+  
+  .MuiTableCell-root {
+    font-size: 16px;
+  }
+  
+  .MuiTableHead-root .MuiTableCell-root {
+    background-color: #007bff;
+    color: white;
+    font-weight: bold;
+  }
+  

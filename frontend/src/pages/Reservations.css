@@ -1,0 +1,112 @@
+.reservations-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Tablo düzeni */
+.table-container {
+  margin-top: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  background-color: #fff;
+}
+
+/* Tablo başlık hücresi stili */
+.table-cell {
+  font-weight: bold;
+  background-color: #f5f5f5;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Tablo içerik hücresi stili */
+.table-row {
+  &:hover {
+    background-color: #f9f9f9;
+  }
+}
+
+.table-row td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Form düzeni */
+.reservation-form {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.reservation-form .MuiTextField-root,
+.reservation-form .MuiFormControl-root {
+  flex: 1;
+  min-width: 250px;
+}
+
+.MuiButton-root {
+  height: 40px;
+}
+
+/* Buton düzeni */
+.MuiButton-root {
+  margin-right: 10px;
+  min-width: 120px;
+}
+
+.MuiButton-containedPrimary {
+  background-color: #007bff;
+}
+
+.MuiButton-containedSecondary {
+  background-color: #ff4c4c;
+}
+
+.MuiButton-containedPrimary:hover {
+  background-color: #0056b3;
+}
+
+.MuiButton-containedSecondary:hover {
+  background-color: #cc0000;
+}
+
+/* Responsive düzen */
+@media (max-width: 768px) {
+  .reservations-container {
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  .reservation-form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .MuiTextField-root,
+  .MuiFormControl-root {
+    width: 100%;
+  }
+
+  .MuiButton-root {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}

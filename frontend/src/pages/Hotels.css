@@ -1,0 +1,68 @@
+.room-form-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #fff; /* Arka plan rengini beyaz yaptık */
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Daha derin bir gölge eklendi */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header .MuiTypography-root {
+  margin-left: 10px; /* "Yeni Oda" yazısına daha fazla boşluk eklendi */
+}
+
+.room-box {
+  margin-top: 20px;
+  padding: 20px; /* İçerik için daha fazla boşluk eklendi */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Gölge efekti ile görsellik geliştirildi */
+}
+
+.room-box .MuiFormControl-root {
+  margin-bottom: 20px; /* Her form elemanının altına boşluk eklendi */
+}
+
+.room-box .MuiTextField-root {
+  margin-right: 15px;
+  width: 100%; /* Küçük ekranlar için genişlik tam oldu */
+}
+
+.dropdown {
+  width: 150px;
+  margin-right: 15px; /* Aralarındaki boşluk artırıldı */
+}
+
+.room-box .dropdown-adult,
+.room-box .dropdown-child {
+  width: 100px; /* Adult ve Child dropdown genişlikleri */
+  margin-right: 10px; /* Aralarındaki boşluk artırıldı */
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 768px) {
+  .room-box {
+    padding: 15px;
+  }
+  
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dropdown {
+    width: 100%; /* Mobilde tam genişlik */
+  }
+
+  .room-box .MuiTextField-root {
+    width: 100%; /* Mobilde tam genişlik */
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+}

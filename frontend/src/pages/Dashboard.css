@@ -1,0 +1,63 @@
+/* Dashboard genel stili */
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Başlıklar */
+h4 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Filtreleme alanları */
+.MuiGrid-item {
+  margin-bottom: 15px;
+}
+
+/* Otel listesi item stili */
+.hotel-list-item {
+  background-color: #fff;
+  margin-bottom: 15px;
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Ortak Buton Stili (Ara ve Otele Git butonları için) */
+.MuiButton-root {
+  padding: 8px 16px; /* Butonun dolgusunu "Ara" butonuna göre ayarladık */
+  font-size: 14px; /* "Ara" butonunun font boyutu */
+  background-color: #007bff;
+  color: white;
+  width: 100%; /* Butonun genişliği tam olacak şekilde */
+  min-width: 150px; /* Minimum genişlik belirledik, istersen bunu artırıp azaltabilirsin */
+}
+
+.MuiButton-root:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive ayarlar */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .hotel-list-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .MuiButton-root {
+    width: 100%; /* Mobilde genişliği tam olacak şekilde ayarlandı */
+  }
+}

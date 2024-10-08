@@ -1,0 +1,33 @@
+.user-management-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .user-form {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-list {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  }
+  
+  .MuiTypography-root {
+    margin-bottom: 10px;
+  }
+  
+  .MuiButton-root {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .MuiButton-root:hover {
+    background-color: #0056b3;
+  }
+  

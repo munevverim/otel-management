@@ -1,0 +1,96 @@
+/* MailSender Container */
+.mail-sender-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: calc(100vw - 240px); /* Sidebar'ı hesaba katan genişlik */
+  margin-left: 240px; /* Sidebar genişliği kadar boşluk bırak */
+  background-color: #eef2f7;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Mail Form Stili */
+.mail-form {
+  padding: 40px;
+  width: 100%;
+  max-width: 500px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mail-form:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Başlık Stili */
+.MuiTypography-root {
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  color: #333;
+}
+
+/* TextField Stili */
+.MuiTextField-root {
+  margin-bottom: 25px;
+}
+
+/* TextField Input Focus */
+.MuiInputBase-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: #007bff !important;
+}
+
+/* Button Stili */
+.MuiButton-root {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.MuiButton-root:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Başarı ve Hata Mesajları */
+.MuiTypography-colorPrimary {
+  color: #28a745 !important;
+}
+
+.MuiTypography-colorError {
+  color: #dc3545 !important;
+}
+
+/* Responsive Ayarlar */
+@media (max-width: 600px) {
+  .mail-sender-container {
+    margin-left: 0;
+    width: 100vw; /* Tam genişlik */
+  }
+
+  .mail-form {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .MuiTypography-root {
+    font-size: 18px;
+  }
+
+  .MuiButton-root {
+    font-size: 14px;
+  }
+}
